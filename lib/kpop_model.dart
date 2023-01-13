@@ -29,7 +29,6 @@ class Members {
   String? birthPlace;
   String? birthDate;
   String? image;
-  Null? createdAt;
   String? updatedAt;
 
   Members(
@@ -40,7 +39,6 @@ class Members {
       this.birthPlace,
       this.birthDate,
       this.image,
-      this.createdAt,
       this.updatedAt});
 
   Members.fromJson(Map<String, dynamic> json) {
@@ -51,7 +49,6 @@ class Members {
     birthPlace = json['birth_place'];
     birthDate = json['birth_date'];
     image = json['image'];
-    createdAt = json['created_at'];
     updatedAt = json['updated_at'];
   }
 
@@ -64,7 +61,6 @@ class Members {
     data['birth_place'] = this.birthPlace;
     data['birth_date'] = this.birthDate;
     data['image'] = this.image;
-    data['created_at'] = this.createdAt;
     data['updated_at'] = this.updatedAt;
     return data;
   }
